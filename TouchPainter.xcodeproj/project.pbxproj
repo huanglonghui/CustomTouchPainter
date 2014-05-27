@@ -59,6 +59,9 @@
 		2899E5220DE3E06400AC0155 /* TouchPainterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* TouchPainterViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		2C1A578018F7684B0073F71B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1A577F18F7684B0073F71B /* Images.xcassets */; };
+		2C3D9B71192D6EB800E19793 /* MixCementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3D9B70192D6EB800E19793 /* MixCementView.m */; };
+		2C3D9B74192D6EE300E19793 /* MixCementViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3D9B73192D6EE300E19793 /* MixCementViewGenerator.m */; };
+		2C3D9B78192D710E00E19793 /* mixcement.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C3D9B77192D710E00E19793 /* mixcement.png */; };
 		8B1F9EAA130D941F00FF009E /* redo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1F9EA8130D941F00FF009E /* redo.png */; };
 		8B1F9EAB130D941F00FF009E /* undo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B1F9EA9130D941F00FF009E /* undo.png */; };
 		8B3B491A12D6BBA2003BA61D /* MarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B491912D6BBA2003BA61D /* MarkEnumerator.m */; };
@@ -154,6 +157,11 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C1A577F18F7684B0073F71B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TouchPainter/Images.xcassets; sourceTree = "<group>"; };
+		2C3D9B6F192D6EB800E19793 /* MixCementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixCementView.h; sourceTree = "<group>"; };
+		2C3D9B70192D6EB800E19793 /* MixCementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixCementView.m; sourceTree = "<group>"; };
+		2C3D9B72192D6EE300E19793 /* MixCementViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixCementViewGenerator.h; sourceTree = "<group>"; };
+		2C3D9B73192D6EE300E19793 /* MixCementViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixCementViewGenerator.m; sourceTree = "<group>"; };
+		2C3D9B77192D710E00E19793 /* mixcement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mixcement.png; path = Resources/Images/mixcement.png; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* TouchPainter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchPainter_Prefix.pch; sourceTree = "<group>"; };
 		8B1F9EA8130D941F00FF009E /* redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redo.png; path = Resources/Images/redo.png; sourceTree = "<group>"; };
 		8B1F9EA9130D941F00FF009E /* undo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = undo.png; path = Resources/Images/undo.png; sourceTree = "<group>"; };
@@ -275,6 +283,8 @@
 				2352AFF7126A9B970091A943 /* ClothCanvasView.m */,
 				2352AFF9126A9BA80091A943 /* PaperCanvasView.h */,
 				2352AFFA126A9BA80091A943 /* PaperCanvasView.m */,
+				2C3D9B6F192D6EB800E19793 /* MixCementView.h */,
+				2C3D9B70192D6EB800E19793 /* MixCementView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -316,6 +326,8 @@
 				2352B000126A9BC90091A943 /* PaperCanvasViewGenerator.m */,
 				2352B002126A9BD90091A943 /* ClothCanvasViewGenerator.h */,
 				2352B003126A9BD90091A943 /* ClothCanvasViewGenerator.m */,
+				2C3D9B72192D6EE300E19793 /* MixCementViewGenerator.h */,
+				2C3D9B73192D6EE300E19793 /* MixCementViewGenerator.m */,
 			);
 			name = "Factory Method";
 			sourceTree = "<group>";
@@ -395,6 +407,7 @@
 		23BFDFBA1220C50F005A882E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2C3D9B77192D710E00E19793 /* mixcement.png */,
 				8B1F9EA8130D941F00FF009E /* redo.png */,
 				8B1F9EA9130D941F00FF009E /* undo.png */,
 				23E7B2F91288056C00C96CD9 /* placeholder.png */,
@@ -537,6 +550,7 @@
 				2899E5220DE3E06400AC0155 /* TouchPainterViewController.xib in Resources */,
 				23BFDFBE1220C910005A882E /* save.png in Resources */,
 				23BFDFC01220C92A005A882E /* open.png in Resources */,
+				2C3D9B78192D710E00E19793 /* mixcement.png in Resources */,
 				23BFDFC21220C97B005A882E /* palette.png in Resources */,
 				2374FE841225B0EB00AECD8F /* BridgeView.xib in Resources */,
 				2374FEA11225BCC300AECD8F /* BridgeViewIpad.xib in Resources */,
@@ -579,8 +593,10 @@
 				2352B001126A9BC90091A943 /* PaperCanvasViewGenerator.m in Sources */,
 				2352B004126A9BD90091A943 /* ClothCanvasViewGenerator.m in Sources */,
 				23EEF99E126C9EEE003F5BF7 /* PaletteViewController.m in Sources */,
+				2C3D9B74192D6EE300E19793 /* MixCementViewGenerator.m in Sources */,
 				23EEF9A3126C9EFA003F5BF7 /* ThumbnailViewController.m in Sources */,
 				23EEF9A8126C9F90003F5BF7 /* CoordinatingController.m in Sources */,
+				2C3D9B71192D6EB800E19793 /* MixCementView.m in Sources */,
 				23145315126D525D00E73CFB /* ScribbleThumbnailCell.m in Sources */,
 				2314531B126D54B600E73CFB /* ScribbleThumbnailView.m in Sources */,
 				238E525F126EA65F002BAC25 /* CommandBarButton.m in Sources */,

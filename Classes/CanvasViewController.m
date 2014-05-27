@@ -47,8 +47,10 @@
     // with the factory method of
     // the CanvasViewGenerator
     //生成CanvasView的类
-    CanvasViewGenerator *defaultGenerator = [[[CanvasViewGenerator alloc] init] autorelease];
-    [self loadCanvasViewWithGenerator:defaultGenerator];
+//    CanvasViewGenerator *defaultGenerator = [[[CanvasViewGenerator alloc] init] autorelease];
+//    [self loadCanvasViewWithGenerator:defaultGenerator];
+    CanvasViewGenerator *mixCementViewGenerator = [[[MixCementViewGenerator alloc] init] autorelease];
+    [self loadCanvasViewWithGenerator:mixCementViewGenerator];
     
     // initialize a Scribble model
     Scribble *scribble = [[[Scribble alloc] init] autorelease];
@@ -161,7 +163,7 @@
 {
     startPoint_ = [[touches anyObject] locationInView:canvasView_];
     
-//    NSLog(@"startPoint x:%f, y:%f", startPoint_.x, startPoint_.y);
+    NSLog(@"startPoint x:%f, y:%f", startPoint_.x, startPoint_.y);
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -178,7 +180,7 @@
         id <Mark> newStroke = [[[Stroke alloc] init] autorelease];
         [newStroke setColor:strokeColor_];
         [newStroke setSize:strokeSize_];
-        
+        NSLog(@"lastPointequal x:%f, y:%f", lastPoint.x, lastPoint.y);
         //[scribble_ addMark:newStroke shouldAddToPreviousMark:NO];
         
         // retrieve a new NSInvocation for drawing and

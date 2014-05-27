@@ -12,6 +12,7 @@
 #import "CanvasViewGenerator.h"
 #import "CommandBarButton.h"
 #import "NSMutableArray+Stack.h"
+#import "MixCementViewGenerator.h"
 
 @interface CanvasViewController : UIViewController
 {
